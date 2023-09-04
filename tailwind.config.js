@@ -9,8 +9,6 @@ module.exports = {
     extend: {
       animation: {
         text: "text 3s ease infinite",
-        "fade-left": "fade-left 0.5s ease-in-out",
-        "fade-right": "fade-right 0.5s ease-in-out",
       },
       keyframes: {
         text: {
@@ -22,14 +20,6 @@ module.exports = {
             "background-size": "200% 200%",
             "background-position": "right center",
           },
-        },
-        "fade-left": {
-          "0%": { opacity: "0", transform: "translateX(100px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
-        "fade-right": {
-          "0%": { opacity: "0", transform: "translateX(-100px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
         },
       },
       fontFamily: {
