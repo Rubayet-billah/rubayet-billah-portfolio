@@ -1,0 +1,19 @@
+.main-background {
+  background-color: black;
+  overflow: hidden;
+}
+
+.background-animate {
+  background: linear-gradient(45deg, black 25%, rgb(22, 30, 30) 50%, black 75%);
+  background-size: 1000% 1000%; /* Adjust as needed */
+  animation: AnimationName 3s linear infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

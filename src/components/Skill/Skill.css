@@ -1,0 +1,38 @@
+.skill-box {
+  --border-size: 3px;
+  --border-angle: 0turn;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      rgb(25, 25, 25),
+      rgb(0, 0, 0) 50%,
+      rgb(25, 25, 25)
+    ),
+    conic-gradient(
+      from var(--border-angle),
+      transparent 20%,
+      rgb(154, 208, 255),
+      rgb(255, 255, 255)
+    );
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
