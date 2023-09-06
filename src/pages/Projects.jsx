@@ -10,7 +10,7 @@ const Projects = () => {
     .then((data) => setProjects(data));
 
   return (
-    <div>
+    <div id="projects">
       <PagesHeading>Projects</PagesHeading>
       <section
         className="grid 
@@ -18,7 +18,7 @@ const Projects = () => {
       >
         {projects?.map((project, idx) => (
           // <Project project={project} />
-          <Project project={project} index={idx} />
+          <Project key={idx} project={project} index={idx} />
         ))}
       </section>
     </div>

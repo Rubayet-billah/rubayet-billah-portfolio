@@ -2,19 +2,28 @@ const Header = () => {
   const menu = (
     <>
       <li>
-        <a href="/">Home</a>
+        <a href="#home">Home</a>
       </li>
       <li>
-        <a href="/">Blogs</a>
+        <a href="#about">About</a>
       </li>
       <li>
-        <a href="/">About</a>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contacts">Contacts</a>
+      </li>
+      <li>
+        <a href="#blogs">Blogs</a>
       </li>
     </>
   );
 
   return (
-    <div className="navbar lg:px-20">
+    <div className="navbar bg-zinc-900 lg:px-20 fixed z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

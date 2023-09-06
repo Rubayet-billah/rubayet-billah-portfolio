@@ -4,7 +4,7 @@ import { skills } from "../utils/constants";
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
       <PagesHeading>Skills</PagesHeading>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         {skills?.map((skill, idx) => (

@@ -19,8 +19,6 @@ const InsertBlog = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // onSubmit(formData); // Pass the form data to the parent component for handling
-    // You can also clear the form fields here if needed
     setFormData({
       title: "",
       author: "",
@@ -31,10 +29,10 @@ const InsertBlog = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Insert Blog</h2>
+      <h2 className="text-2xl font-semibold mb-4">Post Blog</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="title" className="block text-gray-600 mb-1">
+          <label htmlFor="title" className="block text-gray-400 mb-1">
             Title
           </label>
           <input
@@ -48,7 +46,7 @@ const InsertBlog = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="author" className="block text-gray-600 mb-1">
+          <label htmlFor="author" className="block text-gray-400 mb-1">
             Author
           </label>
           <input
@@ -62,7 +60,7 @@ const InsertBlog = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="content" className="block text-gray-600 mb-1">
+          <label htmlFor="content" className="block text-gray-400 mb-1">
             Content
           </label>
           <textarea
@@ -79,7 +77,7 @@ const InsertBlog = () => {
           type="submit"
           className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition duration-300"
         >
-          Submit
+          Post
         </button>
       </form>
     </div>

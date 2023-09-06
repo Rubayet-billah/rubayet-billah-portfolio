@@ -11,7 +11,7 @@ import SocialLinkCard from "../components/Contact/SocialLinkCard";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contacts">
       <PagesHeading>Contact</PagesHeading>
       <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>

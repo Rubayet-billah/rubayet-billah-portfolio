@@ -5,7 +5,7 @@ const BannerSwipper = () => {
   return (
     <div>
       <div className="max-w-md rounded-full animated-border-box-glow relative mt-8 md:mt-0">
-        <div className="box flex justify-center items-center z-50">
+        <div className="box flex justify-center items-center z-10">
           <img className="w-full" src={profileImg} alt="" />
         </div>
       </div>
