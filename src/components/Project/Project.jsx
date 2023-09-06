@@ -1,5 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+import { MdOutlineNavigateNext } from "react-icons/md";
+import { BsStarFill } from "react-icons/bs";
+import { technologies } from "../../utils/constants";
+import { Link } from "react-router-dom";
+
 const Project = ({ project, index }) => {
-  const { image, name, details, description, ratings } = project;
+  const { id = 0, image, name, details, description, ratings } = project;
 
   const indexSign = index % 2 === 0 ? -1 : 1;
   const projectTitleStyle = {
@@ -12,7 +19,9 @@ const Project = ({ project, index }) => {
 
   return (
     <div
-      className={`card w-3/4 md:w-96 relative ${indexSign === 1 && "ml-auto"}`}
+      className={`card w-3/4 md:w-96 relative rounded ${
+        indexSign === 1 && "ml-auto"
+      }`}
     >
       <figure>
         <img
@@ -20,7 +29,7 @@ const Project = ({ project, index }) => {
           alt={name}
         />
       </figure>
-      <div className="card-body px-0">
+      <div className="card-body px-3 bg-zinc-900">
         <div>
           <h2
             data-aos={indexSign === 1 ? "fade-right" : "fade-left"}
@@ -29,9 +38,30 @@ const Project = ({ project, index }) => {
           >
             {name}
           </h2>
-          <button>More ={">"}</button>
         </div>
+        <section className="flex">
+          {technologies?.map((tech, idx) => (
+            <div
+              key={idx}
+              className={`badge badge-outline text-xs mr-1`}
+              style={{ borderColor: `${tech.color}` }}
+            >
+              {tech.name}
+            </div>
+          ))}
+        </section>
         <p className="text-xl">{details}</p>
+        <section className="flex justify-between items-center">
+          <div className="badge badge-outline text-xs">
+            <BsStarFill className="mr-1 text-yellow-400" /> 4.5
+          </div>
+          <Link to={`/projects/${id}`}>
+            <button className="flex justify-end items-center text-teal-300 hover:bg-zinc-700 p-1 pl-2 rounded-sm duration-100 font-bold">
+              Details{" "}
+              <MdOutlineNavigateNext className="text-xl font-extrabold" />
+            </button>
+          </Link>
+        </section>
       </div>
     </div>
   );

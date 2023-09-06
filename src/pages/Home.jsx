@@ -1,10 +1,11 @@
 import Banner from "../components/Home/Banner";
+import PageContainer from "../components/common/PageContainer";
 
 const Home = () => {
   return (
-    <div>
+    <PageContainer id="home">
       <Banner />
-    </div>
+    </PageContainer>
   );
 };
 

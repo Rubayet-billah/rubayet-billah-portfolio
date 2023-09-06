@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Project from "../components/Project/Project";
 import PagesHeading from "../components/common/PagesHeading";
+import PageContainer from "../components/common/PageContainer";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -10,7 +11,7 @@ const Projects = () => {
     .then((data) => setProjects(data));
 
   return (
-    <div id="projects">
+    <PageContainer id="projects">
       <PagesHeading>Projects</PagesHeading>
       <section
         className="grid 
@@ -21,7 +22,7 @@ const Projects = () => {
           <Project key={idx} project={project} index={idx} />
         ))}
       </section>
-    </div>
+    </PageContainer>
   );
 };
 

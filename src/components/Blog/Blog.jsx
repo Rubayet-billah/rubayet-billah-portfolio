@@ -5,6 +5,7 @@ import {
   AiOutlineShareAlt,
 } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Blog = ({ blog }) => {
   const { id, title, author, authorProfileImage, content, date } = blog;
@@ -40,7 +41,9 @@ const Blog = ({ blog }) => {
         <h2 className="mb-1 text-xl font-semibold">{title}</h2>
         <p className="text-sm dark:text-gray-400">
           {content.length > 200 ? `${content.slice(0, 199)}...` : content}{" "}
-          <button className="text-blue-600 font-bold mb-5">Read More</button>
+          <Link to={`/blogs/${id}`}>
+            <button className="text-blue-600 font-bold mb-5">Read More</button>
+          </Link>
         </p>
       </div>
       <div

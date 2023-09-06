@@ -27,6 +27,12 @@ export const skills = [
   // { name: "React Bootstrap", progress: 75, color: "#7952B3" }, // Purple color for React Bootstrap
 ];
 
+export const technologies = [
+  { name: "React JS", color: "#2a4bf5" },
+  { name: "Node JS", color: "#ce31d4" },
+  { name: "MongoDB", color: "#3fe81a" },
+];
+
 export const blogs = [
   {
     id: 1,

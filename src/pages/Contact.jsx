@@ -8,10 +8,11 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import PagesHeading from "../components/common/PagesHeading";
 import { myInfo } from "../utils/constants";
 import SocialLinkCard from "../components/Contact/SocialLinkCard";
+import PageContainer from "../components/common/PageContainer";
 
 const Contact = () => {
   return (
-    <div id="contacts">
+    <PageContainer id="contacts">
       <PagesHeading>Contact</PagesHeading>
       <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
@@ -151,7 +152,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </PageContainer>
   );
 };
 

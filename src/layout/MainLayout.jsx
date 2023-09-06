@@ -10,6 +10,7 @@ import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import Header from "../components/Shared/Header";
 import About from "../pages/About";
+import Footer from "../components/Shared/Footer";
 
 const MainLayout = () => {
   return (
@@ -19,17 +20,11 @@ const MainLayout = () => {
         background-animate text-white"
     >
       <Header />
-      <div className="max-w-7xl mx-auto px-4 lg:px-0 py-24">
-        <Home />
-        <Skills />
-        <Projects />
-        {/* <ProjectDetails /> */}
-        <Contact />
-        <About />
-        {/* <Blogs /> */}
-        {/* <BlogDetails /> */}
-        {/* <InsertBlog /> */}
-        <Outlet></Outlet>
+      <div className="max-w-7xl mx-auto px-4 lg:px-0 pt-24">
+        <section className="min-h-[60vh]">
+          <Outlet></Outlet>
+        </section>
+        <Footer />
       </div>
     </div>
   );
