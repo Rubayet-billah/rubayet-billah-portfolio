@@ -8,10 +8,22 @@ import {
   FiDownload,
 } from "react-icons/fi";
 import PagesHeading from "../components/common/PagesHeading";
-import profileImg from "../assets/Images/profile.png";
+import profileImg from "../assets/Images/img7.png";
 import PageContainer from "../components/common/PageContainer";
+import { myInfo } from "../utils/constants";
 
 const About = () => {
+  const {
+    email,
+    fullName,
+    address,
+    facebook,
+    facebookChat,
+    linkedin,
+    github,
+    phoneNumber,
+    twitter,
+  } = myInfo;
   return (
     <PageContainer id="about">
       <PagesHeading>About Me</PagesHeading>
@@ -40,21 +52,21 @@ const About = () => {
                   <FiUser className="text-teal-300 mr-2" />
                   <div>
                     <h3 className="font-bold text-teal-300 uppercase">Name</h3>
-                    <p>Rubayet Billah</p>
+                    <p>{fullName}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <FiMail className="text-teal-300 mr-2" />
                   <div>
                     <h3 className="font-bold text-teal-300 uppercase">Email</h3>
-                    <p>rubayetbillah909@gmail.com</p>
+                    <p>{email}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <FiPhone className="text-teal-300 mr-2" />
                   <div>
                     <h3 className="font-bold text-teal-300 uppercase">Phone</h3>
-                    <p>+8801875685814</p>
+                    <p>{phoneNumber}</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -65,7 +77,7 @@ const About = () => {
                     </h3>
                     <p>
                       <a
-                        href="https://www.linkedin.com/in/rubayet-billah/"
+                        href={linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-500 hover:underline"

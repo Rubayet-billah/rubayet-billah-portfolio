@@ -3,7 +3,7 @@ export const myInfo = {
   phoneNumber: "+8801875685814",
   email: "rubayetbillah909@gmail.com",
   address: "Gopalganj, Dhaka, Bangladesh",
-  linkedin: "linkedin.com/in/yourusername",
+  linkedin: "https://www.linkedin.com/in/rubayet-billah/",
   facebook: "https://www.facebook.com/md.rubayetbillah",
   facebookChat: "https://www.messenger.com/t/100012567840554/",
   github: "github.com/yourusername",
