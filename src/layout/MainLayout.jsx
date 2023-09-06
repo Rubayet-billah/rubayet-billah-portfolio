@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import BlogDetails from "../components/Blog/BlogDetails";
+import InsertBlog from "../components/Blog/InsertBlog";
 import ProjectDetails from "../components/Project/ProjectDetails";
 import Blogs from "../pages/Blogs";
 import Contact from "../pages/Contact";
@@ -15,7 +17,8 @@ const MainLayout = () => {
       {/* <ProjectDetails /> */}
       {/* <Contact /> */}
       {/* <Blogs /> */}
-      <BlogDetails />
+      {/* <BlogDetails /> */}
+      <InsertBlog />
     </div>
   );
 };
