@@ -33,6 +33,24 @@ export const technologies = [
   { name: "MongoDB", color: "#3fe81a" },
 ];
 
+export const features = [
+  {
+    image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+    keyFeatures:
+      "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems.",
+  },
+  {
+    image: "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
+    keyFeatures:
+      "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
+  },
+  {
+    image: "https://i.ibb.co/VptcTrM/resale-Myproducts.png",
+    keyFeatures:
+      "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control.",
+  },
+];
+
 export const blogs = [
   {
     id: 1,
@@ -71,3 +89,32 @@ export const blogs = [
   },
   // Add more blog entries as needed
 ];
+
+export const project = {
+  _id: 101,
+  image: "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
+  name: "Re Seller",
+  details: "Its a laptop buying/selling website.",
+  features: [
+    {
+      image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+      keyFeatures:
+        "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems.",
+    },
+    {
+      image: "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
+      keyFeatures:
+        "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
+    },
+    {
+      image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+      keyFeatures:
+        "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control.",
+    },
+  ],
+  description:
+    "Re sale laptop is an innovative online platform designed for individuals looking to buy or sell reconditioned laptops. Our website offers a user-friendly interface where users can easily register and create an account. Once logged in, users gain access to a wide range of quality reconditioned laptops available for purchase. With our extensive catalogue, users can browse through various laptop models, comparing features and specifications to find the perfect fit for their needs. Sellers can also list their reconditioned laptops on our platform, reaching a large audience of potential buyers. To ensure a safe and secure transaction process, we have integrated Stripe as a payment gateway, allowing users to make hassle-free payments and track their orders. Our platform also includes an admin functionality, providing a centralized control panel for site management and moderation. Re sale laptop aims to streamline the buying and selling process of reconditioned laptops, offering a convenient and trustworthy platform for users. We prioritize customer satisfaction, ensuring the highest quality standards for the laptops listed on our website.   Join Re sale laptop today and experience the seamless experience of buying and selling reconditioned laptops in a user-friendly environment.",
+  liveLink: "https://my-assignment-12-e6b37.web.app/",
+  githubLink: "",
+  ratings: 4.8,
+};

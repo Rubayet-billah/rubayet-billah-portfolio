@@ -4,26 +4,9 @@ import { CiShare1 } from "react-icons/ci";
 import "./ProjectDetails.css";
 import UserReview from "./UserReview";
 import ReviewInputForm from "./ReviewInputForm";
+import { features } from "../../utils/constants";
 
-const ProjectDetails = () => {
-  const features = [
-    {
-      image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
-      keyFeatures:
-        "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems.",
-    },
-    {
-      image: "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
-      keyFeatures:
-        "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
-    },
-    {
-      image: "https://i.ibb.co/VptcTrM/resale-Myproducts.png",
-      keyFeatures:
-        "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control.",
-    },
-  ];
-
+const ProjectDetails = ({ project }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const activeFeature = features[activeImageIndex];
   const activeImageFeatures = activeFeature?.keyFeatures.split(".");
@@ -85,7 +68,7 @@ const ProjectDetails = () => {
 
       <section className="grid md:grid-cols-2 gap-12 mt-5 md:mt-8">
         <div className="carousel w-full">
-          {features.map((feature, idx) => (
+          {features?.map((feature, idx) => (
             <div
               key={idx}
               className={`carousel-item relative w-full ${
