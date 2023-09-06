@@ -1,0 +1,61 @@
+[
+  {
+    "_id": 101,
+    "image": "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
+    "name": "Re Seller",
+    "details": " Its a laptop buying/selling website.",
+    "detailsImage": {
+      "first": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+      "second": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
+      "third": "https://i.ibb.co/VptcTrM/resale-Myproducts.png"
+    },
+    "keyFeatures": {
+      "first": "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems.",
+      "second": "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
+      "third": "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control."
+    },
+    "features": [
+      {
+        "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+        "keyFeatures": "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems."
+      },
+      {
+        "image": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
+        "keyFeatures": "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis."
+      },
+      {
+        "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+        "keyFeatures": "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control."
+      }
+    ],
+
+    "link": "https://my-assignment-12-e6b37.web.app/",
+    "ratings": 4.8
+  },
+  {
+    "_id": 102,
+    "image": "https://i.ibb.co/wBwzXXz/gameNote.png",
+    "name": "Game Note",
+    "details": " Its a Gaming topup based website.",
+    "detailsImage": {
+      "first": "https://i.ibb.co/RQV2dPW/gamenote-Home.png",
+      "second": "https://i.ibb.co/ZNtW8LV/gamenote-Service-Details.png",
+      "third": "https://i.ibb.co/zXYXX85/game-Note-Update-Review.png"
+    },
+    "link": "https://my-assignment-11-92c6d.web.app/",
+    "ratings": 4.7
+  },
+  {
+    "_id": 103,
+    "image": "https://i.ibb.co/9nYhxbX/eStack.png",
+    "name": "E Stack",
+    "details": "Its a educational courses based website.",
+    "detailsImage": {
+      "first": "https://i.ibb.co/g428phh/Estack-Dark-Theme.png",
+      "second": "https://i.ibb.co/QkmW1MN/Estack-Pdf-Download.png",
+      "third": "https://i.ibb.co/9g0vtSh/Estac-Light-Theme.png"
+    },
+    "link": "https://assignment-10-client-78ac3.web.app/",
+    "ratings": 4.5
+  }
+]
