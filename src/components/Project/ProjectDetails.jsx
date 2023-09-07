@@ -1,15 +1,28 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import { BsLink45Deg } from "react-icons/bs";
+import { useEffect, useState } from "react";
+import { BsFillStarFill, BsLink45Deg } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
-import { CiShare1 } from "react-icons/ci";
+import { project, technologies } from "../../utils/constants";
 import "./ProjectDetails.css";
 import UserReview from "./UserReview";
 import ReviewInputForm from "./ReviewInputForm";
-import { features } from "../../utils/constants";
 
-const ProjectDetails = ({ project }) => {
+const ProjectDetails = () => {
+  const {
+    _id,
+    description,
+    features,
+    githubLink,
+    liveLink,
+    image,
+    name,
+    ratings,
+    technologiesUsed,
+    projectType,
+    userReviews,
+  } = project;
+
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const activeFeature = features[activeImageIndex];
   const activeImageFeatures = activeFeature?.keyFeatures.split(".");
@@ -42,14 +55,30 @@ const ProjectDetails = ({ project }) => {
     <div>
       <section className="md:flex justify-between">
         <div className="md:w-1/2 md:pr-12">
-          <h1 className="text-2xl md:text-5xl font-bold mb-2">Staff Deck</h1>
-          <h3 className="text-xl md:text-2xl text-gray-200">
-            Complete HR management solution
-          </h3>
+          <div className="flex items-center">
+            <h1 className="text-2xl md:text-5xl font-bold mb-2">{name}</h1>
+            <span className="ml-2">
+              {technologiesUsed?.slice(0, 3).map((tech, idx) => (
+                <div
+                  key={idx}
+                  className={`badge badge-outline border-2 font-semibold text-xs mr-1 md:text-base md:badge-lg`}
+                  style={{ borderColor: `${tech.color}` }}
+                >
+                  {tech.name}
+                </div>
+              ))}
+            </span>
+          </div>
+
+          <h3 className="text-xl md:text-2xl text-gray-200">{projectType}</h3>
         </div>
         <div className="mt-4 md:mt-0 md:w-1/2 flex md:justify-end">
+          <div className="text-xl md:text-4xl font-bold flex md:mt-1 mr-5">
+            <span>{ratings}</span>
+            <BsFillStarFill className="mt-1 md:mt-0 ml-2 text-yellow-400" />
+          </div>
           <a
-            href="https://github.com/yourusername/yourrepository"
+            href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="link-icon w-12 text-2xl md:text-5xl mr-2 md:mr-4 relative"
@@ -58,7 +87,7 @@ const ProjectDetails = ({ project }) => {
             <span className="tooltip">GitHub Code Link</span>
           </a>
           <a
-            href="https://www.yourwebsite.com"
+            href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
             className="link-icon w-12 text-2xl md:text-5xl relative"
@@ -121,27 +150,16 @@ const ProjectDetails = ({ project }) => {
         <h2 className="text-xl md:text-3xl font-bold mb-5 capitalize">
           About The Software
         </h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab ipsa
-          quaerat culpa soluta veritatis sed doloremque, ratione explicabo
-          temporibus delectus mollitia aliquam recusandae illo provident. Quam
-          impedit possimus quaerat incidunt placeat, corporis ullam dolor magnam
-          et ipsa fuga debitis voluptatibus unde? Dolores repellat excepturi
-          necessitatibus facere recusandae natus quasi quos et nihil repellendus
-          officiis deserunt porro illo, unde labore sequi voluptates. Accusamus
-          assumenda minima nulla quos illo autem praesentium. Inventore ut fugit
-          aperiam eaque ex illum consequatur dolorem saepe distinctio eveniet
-          sed, at quibusdam fugiat nemo. Dolorum quod doloribus rerum corrupti
-          molestiae assumenda asperiores consequuntur, vel temporibus, iure qui
-          provident?
-        </p>
+        <p>{description}</p>
       </div>
       <div className="bg-zinc-800 p-2 md:p-8 rounded">
         <h2 className="text-xl md:text-3xl font-bold mb-5 capitalize">
           User Review
         </h2>
         <div>
-          <UserReview />
+          {userReviews?.map((review, idx) => (
+            <UserReview key={idx} review={review} />
+          ))}
         </div>
         <ReviewInputForm />
       </div>

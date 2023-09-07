@@ -1,61 +1,155 @@
 [
   {
     "_id": 101,
-    "image": "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
-    "name": "Re Seller",
-    "details": " Its a laptop buying/selling website.",
-    "detailsImage": {
-      "first": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
-      "second": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
-      "third": "https://i.ibb.co/VptcTrM/resale-Myproducts.png"
-    },
-    "keyFeatures": {
-      "first": "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems.",
-      "second": "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
-      "third": "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control."
-    },
+    "image": "https://i.ibb.co/1MsqfFx/staff-Deck.png",
+    "name": "Staff Deck",
+    "projectType": "A complete HR Management Software.",
+    "technologiesUsed": [
+      { "name": "React JS", "color": "#2a4bf5" },
+      { "name": "Node JS", "color": "#ce31d4" },
+      { "name": "MongoDB", "color": "#3fe81a" }
+    ],
     "features": [
       {
-        "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
-        "keyFeatures": "Employee information centralization and management.Leave and attendance tracking automation.Payroll processing and taxation management.Recruitment, applicant tracking, and onboarding tools.Performance appraisal and feedback systems."
+        "image": "https://i.ibb.co/x6Vsm5F/staff-Deck-Job-Portal.png",
+        "keyFeatures": "Employee information centralization and management. Leave and attendance tracking automation. Payroll processing and taxation management. Recruitment, applicant tracking, and onboarding tools. Performance appraisal and feedback systems."
       },
       {
-        "image": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
-        "keyFeatures": "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis."
+        "image": "https://i.ibb.co/kqqfcKn/staff-Deck-Hiring.png",
+        "keyFeatures": "Training needs assessment and tracking. Employee self-service portal for information and requests. Customizable analytics and reporting features. Compliance documentation and management. Internal communication and collaboration tools. Employee surveys and sentiment analysis."
       },
       {
-        "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
-        "keyFeatures": "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control."
+        "image": "https://i.ibb.co/7Yft6F5/staff-Deck-Payroll.png",
+        "keyFeatures": "Benefits administration and enrollment. Succession planning for talent development. Integration capabilities with other systems. Robust security features and access control."
       }
     ],
-
-    "link": "https://my-assignment-12-e6b37.web.app/",
-    "ratings": 4.8
+    "description": "Our software also includes tools for performance management, allowing HR managers to set and track employee goals, document performance reviews, and manage any necessary disciplinary actions. This can help to ensure that the workforce is meeting the expectations of the business and that employees are receiving the feedback and support they need to grow and develop. Another feature of our software is a training and development module, which allows HR managers to track and schedule employee training sessions, document completion of training, and monitor the effectiveness of training programs. This can help to ensure that employees have the necessary skills and knowledge to perform their jobs effectively. Our software also includes a variety of reports and analytics tools, which allow HR managers to view key metrics and data about their workforce, such as turnover rates, employee engagement, and labor costs. This information can be used to identify trends and make data-driven decisions about the workforce. Overall, the software seems to provide a robust solution to manage human resources processes from recruiting to performance management, employee development, and more. It seems like it can significantly ease the HR's job and provide a more transparent and efficient process.",
+    "liveLink": "https://hr-management-client-2a430.web.app/",
+    "githubLink": "https://github.com/Rubayet-billah/hr-management-client",
+    "ratings": 4.5,
+    "userReviews": [
+      {
+        "email": "erenyeager@gmail.com",
+        "name": "Eren Yeager",
+        "rating": 4,
+        "comment": "Gorgeous design! Even more responsive than the previous version. A pleasure to use!"
+      },
+      {
+        "email": "mikasaackerman@gmail.com",
+        "name": "Mikasa Ackerman",
+        "rating": 5,
+        "comment": "I love this software! It has streamlined our HR processes and made our work more efficient."
+      },
+      {
+        "email": "arminarlert@gmail.com",
+        "name": "Armin Arlert",
+        "rating": 4.5,
+        "comment": "Impressive features and user-friendly interface. Highly recommended!"
+      },
+      {
+        "email": "leviackerman@gmail.com",
+        "name": "Levi Ackerman",
+        "rating": 4,
+        "comment": "Great software, but there's always room for improvement. Looking forward to updates."
+      }
+    ]
   },
   {
     "_id": 102,
-    "image": "https://i.ibb.co/wBwzXXz/gameNote.png",
-    "name": "Game Note",
-    "details": " Its a Gaming topup based website.",
-    "detailsImage": {
-      "first": "https://i.ibb.co/RQV2dPW/gamenote-Home.png",
-      "second": "https://i.ibb.co/ZNtW8LV/gamenote-Service-Details.png",
-      "third": "https://i.ibb.co/zXYXX85/game-Note-Update-Review.png"
-    },
-    "link": "https://my-assignment-11-92c6d.web.app/",
-    "ratings": 4.7
+    "image": "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
+    "name": "Resale Laptop",
+    "projectType": "Its a laptop buying/selling website.",
+    "technologiesUsed": [
+      { "name": "React JS", "color": "#2a4bf5" },
+      { "name": "Node JS", "color": "#ce31d4" },
+      { "name": "MongoDB", "color": "#3fe81a" }
+    ],
+    "features": [
+      {
+        "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+        "keyFeatures": "In this laptop shop you can find laptops which are suitable for you. There is categorywise laptop like Basic, Budget, and Gaming. You can choose your desired category and will find a lot of laptops in that category. You can also see the details specification, if the seller is verified or not, product's used time, ratings, and relevant information like this. If you want to book any item, it will be added to your cart. But there's one thing that is important. If you do not make payments for the booking items and any other customer makes payments before you. You will not be able to purchase that item. In the authentication part when you are signing in as a new user, you have to categories that which kind of account you want to create Customer or Seller."
+      },
+      {
+        "image": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
+        "keyFeatures": "Add a laptop for sale with its information from a logged-in user."
+      },
+      {
+        "image": "https://i.ibb.co/VptcTrM/resale-Myproducts.png",
+        "keyFeatures": "Manage your own products, including CRUD operations for your products."
+      }
+    ],
+    "description": "Introducing my new gaming TopUp website, where players can easily and quickly purchase in-game currency and other virtual goods for a wide range of popular games. The website offers a variety of services to choose from, organized by game category. Each service page features a feedback section, where users can read and leave reviews of the service. This way, players can make informed decisions about which services to purchase. Users can also edit or delete their own reviews at any time, providing an up-to-date and accurate representation of the service. With our website, players can easily and securely TopUp their gaming experience and enhance their gameplay.",
+    "liveLink": "https://my-assignment-12-e6b37.web.app/",
+    "githubLink": "https://github.com/Rubayet-billah/resale-laptop-client",
+    "ratings": 4.8,
+    "userReviews": [
+      {
+        "email": "user1@example.com",
+        "name": "User 1",
+        "rating": 4.5,
+        "comment": "Great platform for buying and selling laptops. Easy to use!"
+      },
+      {
+        "email": "user2@example.com",
+        "name": "User 2",
+        "rating": 5,
+        "comment": "The variety of laptops available is impressive. Found the perfect laptop for my needs."
+      },
+      {
+        "email": "user3@example.com",
+        "name": "User 3",
+        "rating": 4.7,
+        "comment": "Smooth and hassle-free experience. Will definitely recommend it to others."
+      }
+    ]
   },
   {
     "_id": 103,
-    "image": "https://i.ibb.co/9nYhxbX/eStack.png",
-    "name": "E Stack",
-    "details": "Its a educational courses based website.",
-    "detailsImage": {
-      "first": "https://i.ibb.co/g428phh/Estack-Dark-Theme.png",
-      "second": "https://i.ibb.co/QkmW1MN/Estack-Pdf-Download.png",
-      "third": "https://i.ibb.co/9g0vtSh/Estac-Light-Theme.png"
-    },
-    "link": "https://assignment-10-client-78ac3.web.app/",
-    "ratings": 4.5
+    "image": "https://i.ibb.co/wBwzXXz/gameNote.png",
+    "name": "Game Note",
+    "projectType": "Its a Gaming TopUp based website.",
+    "technologiesUsed": [
+      { "name": "React JS", "color": "#2a4bf5" },
+      { "name": "Node JS", "color": "#ce31d4" },
+      { "name": "MongoDB", "color": "#3fe81a" }
+    ],
+    "features": [
+      {
+        "image": "https://i.ibb.co/RQV2dPW/gamenote-Home.png",
+        "keyFeatures": "..."
+      },
+      {
+        "image": "https://i.ibb.co/ZNtW8LV/gamenote-Service-Details.png",
+        "keyFeatures": "..."
+      },
+      {
+        "image": "https://i.ibb.co/zXYXX85/game-Note-Update-Review.png",
+        "keyFeatures": "..."
+      }
+    ],
+    "description": "...",
+    "liveLink": "https://my-assignment-11-92c6d.web.app/",
+    "githubLink": "https://github.com/Rubayet-billah/gamenote-client",
+    "ratings": 4.7,
+    "userReviews": [
+      {
+        "email": "user4@example.com",
+        "name": "User 4",
+        "rating": 4.7,
+        "comment": "Great service for gamers. Fast and reliable top-ups!"
+      },
+      {
+        "email": "user5@example.com",
+        "name": "User 5",
+        "rating": 4.5,
+        "comment": "Impressive website. Makes it easy to enhance your gaming experience."
+      },
+      {
+        "email": "user6@example.com",
+        "name": "User 6",
+        "rating": 4.8,
+        "comment": "Highly recommended for gamers looking for top-up services."
+      }
+    ]
   }
 ]

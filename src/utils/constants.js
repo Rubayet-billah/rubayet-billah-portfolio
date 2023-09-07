@@ -92,9 +92,14 @@ export const blogs = [
 
 export const project = {
   _id: 101,
-  image: "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
-  name: "Re Seller",
-  details: "Its a laptop buying/selling website.",
+  image: "https://i.ibb.co/1MsqfFx/staff-Deck.png",
+  name: "Staff Deck",
+  projectType: "A complete HR Management Software.",
+  technologiesUsed: [
+    { name: "React JS", color: "#2a4bf5" },
+    { name: "Node JS", color: "#ce31d4" },
+    { name: "MongoDB", color: "#3fe81a" },
+  ],
   features: [
     {
       image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
@@ -107,14 +112,44 @@ export const project = {
         "Training needs assessment and tracking.Employee self-service portal for information and requests.Customizable analytics and reporting features.Compliance documentation and management.Internal communication and collaboration tools.Employee surveys and sentiment analysis.",
     },
     {
-      image: "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
+      image: "https://i.ibb.co/VptcTrM/resale-Myproducts.png",
       keyFeatures:
         "Benefits administration and enrollment.Succession planning for talent development.Integration capabilities with other systems.Robust security features and access control.",
     },
   ],
   description:
-    "Re sale laptop is an innovative online platform designed for individuals looking to buy or sell reconditioned laptops. Our website offers a user-friendly interface where users can easily register and create an account. Once logged in, users gain access to a wide range of quality reconditioned laptops available for purchase. With our extensive catalogue, users can browse through various laptop models, comparing features and specifications to find the perfect fit for their needs. Sellers can also list their reconditioned laptops on our platform, reaching a large audience of potential buyers. To ensure a safe and secure transaction process, we have integrated Stripe as a payment gateway, allowing users to make hassle-free payments and track their orders. Our platform also includes an admin functionality, providing a centralized control panel for site management and moderation. Re sale laptop aims to streamline the buying and selling process of reconditioned laptops, offering a convenient and trustworthy platform for users. We prioritize customer satisfaction, ensuring the highest quality standards for the laptops listed on our website.   Join Re sale laptop today and experience the seamless experience of buying and selling reconditioned laptops in a user-friendly environment.",
-  liveLink: "https://my-assignment-12-e6b37.web.app/",
-  githubLink: "",
-  ratings: 4.8,
+    "Our software also includes tools for performance management, allowing HR managers to set and track employee goals, document performance reviews, and manage any necessary disciplinary actions. This can help to ensure that the workforce is meeting the expectations of the business and that employees are receiving the feedback and support they need to grow and develop. Another feature of our software is a training and development module, which allows HR managers to track and schedule employee training sessions, document completion of training, and monitor the effectiveness of training programs. This can help to ensure that employees have the necessary skills and knowledge to perform their jobs effectively. Our software also includes a variety of reports and analytics tools, which allow HR managers to view key metrics and data about their workforce, such as turnover rates, employee engagement, and labor costs. This information can be used to identify trends and make data-driven decisions about the workforce.Overall, the software seems to provide robust solution to manage human resources process from recruiting to performance management, employee development and more, it seems like it can significantly ease the HR's job and provide a more transparent and efficient process.",
+  liveLink: "https://hr-management-client-2a430.web.app/",
+  githubLink: "https://github.com/Rubayet-billah/hr-management-client",
+  ratings: 4.5,
+  userReviews: [
+    {
+      email: "erenyeager@gmail.com",
+      name: "Eren Yeager",
+      rating: 4,
+      comment:
+        "Gorgeous design! Even more responsive than the previous version. A pleasure to use!",
+    },
+    {
+      email: "mikasaackerman@gmail.com",
+      name: "Mikasa Ackerman",
+      rating: 5,
+      comment:
+        "I love this software! It has streamlined our HR processes and made our work more efficient.",
+    },
+    {
+      email: "arminarlert@gmail.com",
+      name: "Armin Arlert",
+      rating: 4.5,
+      comment:
+        "Impressive features and user-friendly interface. Highly recommended!",
+    },
+    {
+      email: "leviackerman@gmail.com",
+      name: "Levi Ackerman",
+      rating: 4,
+      comment:
+        "Great software, but there's always room for improvement. Looking forward to updates.",
+    },
+  ],
 };

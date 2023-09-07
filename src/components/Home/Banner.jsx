@@ -12,7 +12,9 @@ const Banner = () => {
             Rubayet
           </span>
         </h1>
-        <h2 className="lg:text-4xl lg:mb-4">A web developer and good at</h2>
+        <h2 className="lg:text-4xl lg:mb-4">
+          A software developer and good at
+        </h2>
         <h1 className="font-bold text-2xl lg:text-7xl animate-text bg-gradient-to-r from-teal-500 via-white to-[#00deff] bg-clip-text text-transparent">
           <Typewriter
             options={{

@@ -43,7 +43,7 @@ const Project = ({ project, index }) => {
           {technologies?.map((tech, idx) => (
             <div
               key={idx}
-              className={`badge badge-outline text-xs mr-1`}
+              className={`badge badge-outline border-2 text-xs mr-1`}
               style={{ borderColor: `${tech.color}` }}
             >
               {tech.name}

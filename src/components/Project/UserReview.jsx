@@ -1,30 +1,31 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { BsStarFill } from "react-icons/bs";
 
 const UserReview = ({ review }) => {
-  review = {
-    email: "rubayetbillah@gmail.com",
-    name: "Rubayet Billah",
-    rating: 4,
-    comment:
-      "Gorgeous design! Even more responsive than the previous version. A pleasure to use!",
-  };
+  console.log(review);
+
+  // Ensure that review?.rating is a valid number between 0 and 5
+  const rating = Number(review?.rating);
+  const isValidRating = !isNaN(rating) && rating >= 0 && rating <= 5;
+
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-2 my-5">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2 font-bold">
           <div className="w-7 h-7 text-center rounded-full bg-red-500 grid place-items-center">
-            {review.name[0]}
+            {review?.name[0]}
           </div>
-          <span>{review.name}</span>
+          <span>{review?.name}</span>
         </div>
         <div className="flex p-1 gap-1 text-yellow-500">
-          {[...Array(review.rating)].map((_, index) => (
-            <BsStarFill key={index} />
-          ))}
+          {isValidRating
+            ? Array.from({ length: rating }, (_, index) => (
+                <BsStarFill key={index} />
+              ))
+            : null}
         </div>
       </div>
-      <div>{review.comment}</div>
+      <div>{review?.comment}</div>
     </div>
   );
 };
