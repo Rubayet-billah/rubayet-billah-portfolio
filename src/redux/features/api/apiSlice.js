@@ -16,6 +16,4 @@ const api = createApi({
     }),
   }),
 });
-
-export const { useGetPostsQuery, useCreatePostMutation } = api;
 export default api;
