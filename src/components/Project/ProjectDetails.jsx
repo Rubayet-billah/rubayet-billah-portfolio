@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { BsGithub, BsGlobeAsiaAustralia } from "react-icons/bs";
 import { CiShare1 } from "react-icons/ci";
