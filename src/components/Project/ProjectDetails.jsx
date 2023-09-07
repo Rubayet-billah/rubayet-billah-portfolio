@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { BsGithub, BsGlobeAsiaAustralia } from "react-icons/bs";
+import { BsLink45Deg } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
 import { CiShare1 } from "react-icons/ci";
 import "./ProjectDetails.css";
 import UserReview from "./UserReview";
@@ -46,23 +47,23 @@ const ProjectDetails = ({ project }) => {
             Complete HR management solution
           </h3>
         </div>
-        <div className="mt-4 md:mt-0 md:w-1/2 md:flex md:justify-end">
+        <div className="mt-4 md:mt-0 md:w-1/2 flex md:justify-end">
           <a
             href="https://github.com/yourusername/yourrepository"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-circle btn-outline text-xl md:text-2xl mr-2 md:mr-4 relative"
+            className="link-icon w-12 text-2xl md:text-5xl mr-2 md:mr-4 relative"
           >
-            <BsGithub />
+            <FaGithubSquare />
             <span className="tooltip">GitHub Code Link</span>
           </a>
           <a
             href="https://www.yourwebsite.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-circle btn-outline text-xl md:text-2xl relative"
+            className="link-icon w-12 text-2xl md:text-5xl relative"
           >
-            <BsGlobeAsiaAustralia />
+            <BsLink45Deg />
             <span className="tooltip">Live Website Link</span>
           </a>
         </div>
