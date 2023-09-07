@@ -10,6 +10,7 @@ import Home from "../pages/Home";
 import ProjectDetails from "../components/Project/ProjectDetails";
 import Blogs from "../pages/Blogs";
 import BlogDetails from "../components/Blog/BlogDetails";
+import InsertBlog from "../components/Blog/InsertBlog";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs/:id",
         element: <BlogDetails />,
+      },
+      {
+        path: "/blogs/create",
+        element: <InsertBlog />,
       },
       {
         path: "/projects/:id",

@@ -18,13 +18,17 @@ const InsertBlog = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData({
-      title: "",
-      author: "",
-      content: "",
-      date: new Date().toLocaleDateString(),
-    });
+    const isSure = window.confirm("This action can't be undone");
+
+    if (isSure) {
+      console.log(formData);
+      setFormData({
+        title: "",
+        author: "",
+        content: "",
+        date: new Date().toLocaleDateString(),
+      });
+    }
   };
 
   return (

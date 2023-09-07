@@ -48,7 +48,7 @@ const Blog = ({ blog }) => {
       </div>
       <div
         className="flex flex-wrap justify-between"
-        style={{ "margin-top": "auto" }}
+        style={{ marginTop: "auto" }}
       >
         <div className="flex space-x-2 text-sm">
           <button type="button" className="flex items-center p-1 space-x-1.5">
