@@ -4,24 +4,36 @@ const Header = () => {
   const menu = (
     <>
       <li>
-        <a href="/#home">Home</a>
+        <a className="hover:bg-transparent" href="/#home">
+          Home
+        </a>
         {/* <Link to='/'>Home</Link> */}
       </li>
       <li>
-        <a href="/#about">About</a>
+        <a className="hover:bg-transparent" href="/#about">
+          About
+        </a>
       </li>
       <li>
-        <a href="/#skills">Skills</a>
+        <a className="hover:bg-transparent" href="/#skills">
+          Skills
+        </a>
       </li>
       <li>
-        <a href="/#projects">Projects</a>
+        <a className="hover:bg-transparent" href="/#projects">
+          Projects
+        </a>
       </li>
       <li>
-        <a href="/#contacts">Contacts</a>
+        <a className="hover:bg-transparent" href="/#contacts">
+          Contacts
+        </a>
       </li>
       <li>
         {/* <a href="/blogs">Blogs</a> */}
-        <Link to="/blogs">Blogs</Link>
+        <Link className="hover:bg-transparent" to="/blogs">
+          Blogs
+        </Link>
       </li>
     </>
   );

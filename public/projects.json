@@ -57,7 +57,7 @@
   {
     "_id": 102,
     "image": "https://i.ibb.co/qM5FXGT/resale-Laptop.png",
-    "name": "Resale Laptop",
+    "name": "Re Seller",
     "projectType": "Its a laptop buying/selling website.",
     "technologiesUsed": [
       { "name": "React JS", "color": "#2a4bf5" },
