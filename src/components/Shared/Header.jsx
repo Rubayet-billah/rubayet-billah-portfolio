@@ -65,7 +65,10 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <a href="/" className="btn btn-ghost text-2xl uppercase">
+        <a
+          href="/"
+          className="btn btn-ghost text-2xl hover:bg-inherit hover:text-gray-500 uppercase"
+        >
           Portfolio
         </a>
       </div>
