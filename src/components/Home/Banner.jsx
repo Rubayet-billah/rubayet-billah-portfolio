@@ -4,9 +4,9 @@ import BannerSwipper from "./BannerSwipper";
 
 const Banner = () => {
   return (
-    <section className="grid lg:grid-cols-2 lg:gap-x-48 place-items-center mt-12 min-h-[60vh] uppercase">
-      <div>
-        <h1 className="lg:text-6xl lg:mb-4">
+    <section className="grid lg:grid-cols-2 lg:gap-x-48 place-items-center lg:mt-8 md:min-h-[60vh] uppercase">
+      <div className="mb-5 md:mb-0 leading-8 lg:leading-6">
+        <h1 className="text-2xl lg:text-6xl lg:mb-4">
           Hi, I'm{" "}
           <span className="font-extrabold animate-text bg-gradient-to-r from-teal-500 via-white to-[#00deff] bg-clip-text text-transparent ">
             Rubayet
@@ -15,7 +15,7 @@ const Banner = () => {
         <h2 className="lg:text-4xl lg:mb-4">
           A software developer and good at
         </h2>
-        <h1 className="font-bold text-2xl lg:text-7xl animate-text bg-gradient-to-r from-teal-500 via-white to-[#00deff] bg-clip-text text-transparent">
+        <h1 className="font-bold text-3xl lg:text-7xl animate-text bg-gradient-to-r from-teal-500 via-white to-[#00deff] bg-clip-text text-transparent">
           <Typewriter
             options={{
               skipAddStyles: true,
