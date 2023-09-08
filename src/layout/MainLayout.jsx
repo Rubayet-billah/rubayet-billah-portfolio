@@ -15,6 +15,7 @@ import Footer from "../components/Shared/Footer";
 const MainLayout = () => {
   return (
     <div
+      id="home"
       className="font-montserrat min-h-screen
         main-background
         background-animate text-white"
