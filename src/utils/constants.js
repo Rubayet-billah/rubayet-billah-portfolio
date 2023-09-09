@@ -20,7 +20,7 @@ export const skills = [
   { name: "MongoDB", progress: 80, color: "#4DB33D" }, // Green color for MongoDB
   { name: "Redux", progress: 95, color: "#764ABC" }, // Purple color for Redux
   { name: "TailwindCSS", progress: 90, color: "#38B2AC" }, // Teal color for TailwindCSS
-  { name: "Bootstrap 5", progress: 70, color: "#563D7C" }, // Purple color for Bootstrap 5
+  { name: "Bootstrap", progress: 70, color: "#563D7C" }, // Purple color for Bootstrap 5
   // { name: "React Router", progress: 80, color: "#CA4245" }, // Red color for React Router
   // { name: "Firebase", progress: 65, color: "#FFCB2B" }, // Yellow color for Firebase
   // { name: "Stripe", progress: 60, color: "#6772E5" }, // Blue color for Stripe
