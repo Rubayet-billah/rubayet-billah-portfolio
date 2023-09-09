@@ -65,12 +65,12 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <a
-          href="/"
+        <Link
+          to="/"
           className="btn btn-ghost text-2xl hover:bg-inherit hover:text-gray-500 uppercase"
         >
           Portfolio
-        </a>
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menu}</ul>
