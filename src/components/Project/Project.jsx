@@ -24,10 +24,11 @@ const Project = ({ project, index }) => {
       }`}
     >
       <figure>
-        <img
+        {/* <img
           src="https://static1.squarespace.com/static/5de1ec476b779f2d5a269a55/5de59cd08d3bc0294024082b/600af5c23baa0c79aeafeaa6/1614979719929/8.+Charge+Wall+copy.jpg?format=1500w"
           alt={name}
-        />
+        /> */}
+        <img className="opacity-75" src={image} alt={name} />
       </figure>
       <div className="card-body px-3 bg-zinc-900">
         <div>

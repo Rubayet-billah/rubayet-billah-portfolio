@@ -1,31 +1,19 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
+// /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { BsFillStarFill, BsLink45Deg } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
-import { project, technologies } from "../../utils/constants";
 import "./ProjectDetails.css";
 import UserReview from "./UserReview";
 import ReviewInputForm from "./ReviewInputForm";
+import { useParams } from "react-router-dom";
+import { useGetProjectByIdQuery } from "../../redux/features/project/projectApi";
 
 const ProjectDetails = () => {
-  const {
-    _id,
-    description,
-    features,
-    githubLink,
-    liveLink,
-    image,
-    name,
-    ratings,
-    technologiesUsed,
-    projectType,
-    userReviews,
-  } = project;
+  const { id } = useParams();
+  const { data: project, isLoading } = useGetProjectByIdQuery(id);
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const activeFeature = features[activeImageIndex];
-  const activeImageFeatures = activeFeature?.keyFeatures.split(".");
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
   const handleImageChange = (newIndex) => {
@@ -51,10 +39,27 @@ const ProjectDetails = () => {
     return () => clearInterval(interval);
   }, [activeImageIndex]);
 
+  if (isLoading) {
+    return <div className="text-4xl text-center">Loading...</div>;
+  }
+  const {
+    description,
+    features,
+    githubLink,
+    liveLink,
+    name,
+    ratings,
+    technologiesUsed,
+    projectType,
+    userReviews,
+  } = project;
+
+  const activeFeature = features[activeImageIndex];
+  const activeImageFeatures = activeFeature?.keyFeatures.split(".");
   return (
     <div>
       <section className="md:flex justify-between">
-        <div className="md:w-1/2 md:pr-12">
+        <div className="md:pr-12">
           <div className="flex items-center">
             <h1 className="text-2xl md:text-5xl font-bold mb-2">{name}</h1>
             <span className="ml-2">
@@ -72,7 +77,7 @@ const ProjectDetails = () => {
 
           <h3 className="text-xl md:text-2xl text-gray-200">{projectType}</h3>
         </div>
-        <div className="mt-4 md:mt-0 md:w-1/2 flex md:justify-end">
+        <div className="mt-4 md:mt-0 flex md:justify-end">
           <div className="text-xl md:text-4xl font-bold flex md:mt-1 mr-5">
             <span>{ratings}</span>
             <BsFillStarFill className="mt-1 md:mt-0 ml-2 text-yellow-400" />

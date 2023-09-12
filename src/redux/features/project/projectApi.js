@@ -1,13 +1,15 @@
+// projectApi.js
 import api from "../api/apiSlice";
 
 const projectApi = api.injectEndpoints({
   endpoints: (builder) => ({
     getProjects: builder.query({
-      query: () => ({
-        url: "/projects",
-      }),
+      query: () => "projects", // Use the endpoint name directly
+    }),
+    getProjectById: builder.query({
+      query: (id) => `projects/${id}`, // Use the endpoint name directly
     }),
   }),
 });
 
-export const { useGetProjectsQuery } = projectApi;
+export const { useGetProjectsQuery, useGetProjectByIdQuery } = projectApi;
