@@ -67,18 +67,18 @@
     "features": [
       {
         "image": "https://i.ibb.co/QXLbLFD/ressale-Categories.png",
-        "keyFeatures": "In this laptop shop you can find laptops which are suitable for you. There is categorywise laptop like Basic, Budget, and Gaming. You can choose your desired category and will find a lot of laptops in that category. You can also see the details specification, if the seller is verified or not, product's used time, ratings, and relevant information like this. If you want to book any item, it will be added to your cart. But there's one thing that is important. If you do not make payments for the booking items and any other customer makes payments before you. You will not be able to purchase that item. In the authentication part when you are signing in as a new user, you have to categories that which kind of account you want to create Customer or Seller."
+        "keyFeatures": "Empowering users to browse and procure high-quality, pre-owned laptops. Open registration for both Buyers and Sellers, empowering anyone to join the platform. Buyers can curate their personal wishlist for strategic, future purchases. Buyers can securely transact with the convenience of the robust International Stripe Payment System."
       },
       {
         "image": "https://i.ibb.co/V29tTGb/resale-Addproduct.png",
-        "keyFeatures": "Add a laptop for sale with its information from a logged-in user."
+        "keyFeatures": "Admin wields extensive control, seamlessly managing user accounts and wielding authority to enforce necessary actions. Swift admin intervention in removing reported items, maintaining a vibrant and safe marketplace."
       },
       {
         "image": "https://i.ibb.co/VptcTrM/resale-Myproducts.png",
-        "keyFeatures": "Manage your own products, including CRUD operations for your products."
+        "keyFeatures": "Sellers are in command, equipped to effortlessly add, modify, and oversee their product portfolio. "
       }
     ],
-    "description": "Introducing my new gaming TopUp website, where players can easily and quickly purchase in-game currency and other virtual goods for a wide range of popular games. The website offers a variety of services to choose from, organized by game category. Each service page features a feedback section, where users can read and leave reviews of the service. This way, players can make informed decisions about which services to purchase. Users can also edit or delete their own reviews at any time, providing an up-to-date and accurate representation of the service. With our website, players can easily and securely TopUp their gaming experience and enhance their gameplay.",
+    "description": "Re Seller is your go-to online marketplace for high-quality, pre-owned laptops. With an inclusive open-registration system, we empower buyers and sellers alike to engage in seamless transactions. Buyers can create wishlists for strategic purchases and make secure payments through the International Stripe Payment system. Our vigilant admin team ensures product integrity, swiftly addressing reported items to maintain a vibrant and secure marketplace. Powered by cutting-edge technologies like React JS, Node JS, and MongoDB, Re Seller offers a modern and responsive user experience. Our platform has earned a stellar 4.8 rating for its user-friendliness and impressive laptop variety. Join Re Seller's thriving community today and explore a hassle-free world of laptop buying and selling.",
     "liveLink": "https://my-assignment-12-e6b37.web.app/",
     "githubLink": "https://github.com/Rubayet-billah/resale-laptop-client",
     "ratings": 4.8,
@@ -116,18 +116,18 @@
     "features": [
       {
         "image": "https://i.ibb.co/RQV2dPW/gamenote-Home.png",
-        "keyFeatures": "..."
+        "keyFeatures": "Secured user authenticaton. Gorgeous UI design. Smooth navigating system"
       },
       {
         "image": "https://i.ibb.co/ZNtW8LV/gamenote-Service-Details.png",
-        "keyFeatures": "..."
+        "keyFeatures": "Offers top-up services for various games. Providing a one-stop destination for gamers to recharge in-game currencies or items. Users can access special offers and promotions for their favorite games, ensuring cost-effective gaming experiences."
       },
       {
         "image": "https://i.ibb.co/zXYXX85/game-Note-Update-Review.png",
-        "keyFeatures": "..."
+        "keyFeatures": "Allows users to read previous reviews and rate the website based on their experiences, fostering transparency and trust within the gaming community. Users have the ability to edit and update their previously submitted reviews, ensuring they can provide accurate feedback over time."
       }
     ],
-    "description": "...",
+    "description": "Introducing my new gaming TopUp website, where players can easily and quickly purchase in-game currency and other virtual goods for a wide range of popular games. The website offers a variety of services to choose from, organized by game category. Each service page features a feedback section, where users can read and leave reviews of the service. This way, players can make informed decisions about which services to purchase. Users can also edit or delete their own reviews at any time, providing an up-to-date and accurate representation of the service. With our website, players can easily and securely TopUp their gaming experience and enhance their gameplay.",
     "liveLink": "https://my-assignment-11-92c6d.web.app/",
     "githubLink": "https://github.com/Rubayet-billah/gamenote-client",
     "ratings": 4.7,

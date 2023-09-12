@@ -1,14 +1,15 @@
-import { useState } from "react";
 import Project from "../components/Project/Project";
 import PagesHeading from "../components/common/PagesHeading";
 import PageContainer from "../components/common/PageContainer";
+import { useGetProjectsQuery } from "../redux/features/project/projectApi";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
+  const { data: projects } = useGetProjectsQuery();
+  // const [projects, setProjects] = useState([]);
 
-  fetch("projects.json")
-    .then((res) => res.json())
-    .then((data) => setProjects(data));
+  // fetch("projects.json")
+  //   .then((res) => res.json())
+  //   .then((data) => setProjects(data));
 
   return (
     <PageContainer id="projects">

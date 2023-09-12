@@ -2,18 +2,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: "./" }), // Configure your API base URL
-  endpoints: (builder) => ({
-    getPosts: builder.query({
-      query: () => "posts",
-    }),
-    createPost: builder.mutation({
-      query: (newPost) => ({
-        url: "posts",
-        method: "POST",
-        body: newPost,
-      }),
-    }),
-  }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://rubayet-billah-server.vercel.app",
+  }), // Configure your API base URL
+  endpoints: () => ({}),
 });
 export default api;

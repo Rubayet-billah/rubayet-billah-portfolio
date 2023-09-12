@@ -6,7 +6,7 @@ import { technologies } from "../../utils/constants";
 import { Link } from "react-router-dom";
 
 const Project = ({ project, index }) => {
-  const { id = 0, image, name, details, description, ratings } = project;
+  const { _id, image, name, details, description, ratings } = project;
 
   const indexSign = index % 2 === 0 ? -1 : 1;
   const projectTitleStyle = {
@@ -55,7 +55,7 @@ const Project = ({ project, index }) => {
           <div className="badge badge-outline text-xs">
             <BsStarFill className="mr-1 text-yellow-400" /> 4.5
           </div>
-          <Link to={`/projects/${id}`}>
+          <Link to={`/projects/${_id}`}>
             <button className="flex justify-end items-center text-teal-300 hover:bg-zinc-700 p-1 pl-2 rounded-sm duration-100 font-bold">
               Details{" "}
               <MdOutlineNavigateNext className="text-xl font-extrabold" />
