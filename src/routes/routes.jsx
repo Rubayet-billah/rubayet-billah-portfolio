@@ -11,6 +11,8 @@ import ProjectDetails from "../components/Project/ProjectDetails";
 import Blogs from "../pages/Blogs";
 import BlogDetails from "../components/Blog/BlogDetails";
 import InsertBlog from "../components/Blog/InsertBlog";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
       {
         path: "/projects/:id",
         element: <ProjectDetails />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

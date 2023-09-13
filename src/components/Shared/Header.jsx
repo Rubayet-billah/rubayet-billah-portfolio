@@ -35,6 +35,12 @@ const Header = () => {
           Blogs
         </Link>
       </li>
+      <li>
+        {/* <a href="/blogs">Blogs</a> */}
+        <Link className="hover:bg-transparent" to="/login">
+          Login
+        </Link>
+      </li>
     </>
   );
 
