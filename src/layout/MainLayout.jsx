@@ -16,12 +16,10 @@ const MainLayout = () => {
   return (
     <div
       id="home"
-      className="font-montserrat min-h-screen
-        main-background
-        background-animate text-white"
+      className="min-h-screen text-white font-montserrat main-background background-animate"
     >
       <Header />
-      <div className="max-w-7xl mx-auto px-4 lg:px-0 pt-24">
+      <div className="px-4 pt-24 mx-auto lg:px-0">
         <section className="min-h-[60vh]">
           <Outlet></Outlet>
         </section>

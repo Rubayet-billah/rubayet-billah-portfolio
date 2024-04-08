@@ -1,5 +1,5 @@
 .skill-box {
-  --border-size: 3px;
+  --border-size: 10px;
   --border-angle: 0turn;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
     cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-radius: 10px;
 
   animation: bg-spin 7s linear infinite;
 }
