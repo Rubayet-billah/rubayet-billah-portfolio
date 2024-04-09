@@ -58,7 +58,7 @@
 }
 
 /* Media Queries for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .box {
     width: 75%;
     height: 100%;

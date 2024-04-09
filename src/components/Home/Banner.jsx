@@ -5,7 +5,7 @@ import BannerSwipper from "./BannerSwipper";
 const Banner = () => {
   return (
     <section className="grid lg:grid-cols-2 xl:gap-x-48 place-items-center lg:mt-8 md:min-h-[60vh] uppercase">
-      <div className="mb-5 leading-8 md:mb-0 lg:leading-6">
+      <div className="mb-5 leading-8 lg:mb-0 lg:leading-6">
         <h1 className="text-2xl lg:text-4xl xl:text-6xl lg:mb-4">
           Hi, I'm{" "}
           <span className="font-extrabold animate-text bg-gradient-to-r from-teal-500 via-white to-[#00deff] bg-clip-text text-transparent ">
