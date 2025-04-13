@@ -1,6 +1,6 @@
 import "./BannerSwipper.css";
 // import profileImg from "../../assets/Images/profile.png";
-import profileImg from "../../assets/Images/profile-1.jpg";
+import profileImg from "../../assets/Images/portfolio_profile.jpg";
 
 const BannerSwipper = () => {
   return (
